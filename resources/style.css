@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Inter;
+    src: url(Ubuntu.ttf);
+}
+
+*{
+    font-family: Ubuntu;
+}
+
+body {
+    font-family: Ubuntu;
+    background-color: #f1f1f1; /* Verde claro como cor de fundo */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #8CB63C;
+    text-align: center;
+}
+
+/* Container para os elementos da página */
+.container {
+    background-color: #ffffff; /* Fundo branco para os elementos */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Alinhamento horizontal dos menus dropdown */
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    gap: 10px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+
+}
+
+/* Estilização dos menus dropdown */
+select {
+    padding: 8px; /* Reduzindo o padding */
+    border: 2px solid #000000;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+}
+
+/* Estilo para o Botão */
+button {
+    padding: 8px 12px; /* Reduzindo o padding */
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+    background-color: #8CB63C;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #506824;
+}
+
+/* Estilização do cartão de recomendação */
+.recomendacao-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recomendacao-imagem {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste para manter a proporção */
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recomendacao-detalhes {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar select, .navbar button {
+        width: 100%; /* Faz com que cada item ocupe a largura total em telas menores */
+        margin-bottom: 10px; /* Adiciona um espaço entre os itens quando estão empilhados */
+    }
+}

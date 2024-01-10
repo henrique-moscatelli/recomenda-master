@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="resources/style.css">
+    <title>RecomendaMaster</title>
+</head>
+
+<body>
+    <h1>RecomendaMaster</h1>
+<div class="navbar">
+    <div class="dropdown">
+        <select id="potenciaTrator">
+            <option value="">Selecione a potência do seu trator</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <select id="tipoTransmissao">
+            <option value="">Selecione o tipo de transmissão está buscando</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <select id="capacidadeCarga">
+            <option value="">Selecione capacidade de carga do distribuidor</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <select id="desligaIndividual">
+            <option value="">Deseja esteira independente?</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <select id="tipoFluxo">
+            <option value="">O fluxo do seu trator é maior do que 60 L/min?</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <select id="tipoBitola">
+            <option value="">Deseja bitola regulável?</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+    <div class="dropdown">
+        <select id="faixaAplica">
+            <option value="">Selecione a faixa de aplicação</option>
+            <!-- Opções serão preenchidas por JavaScript -->
+        </select>
+    </div>
+
+
+    <!-- Outros dropdowns conforme necessário -->
+
+    <button onclick="recomendarDistribuidor()">Recomendar Distribuidor</button>
+    <button onclick="resetRecomenda()">Nova recomendação</button>
+</div>
+    <div id="recomendacao" class="recomendacao-card">
+        <!-- Recomendação será exibida aqui -->
+    </div>
+
+    <script src="resources/script.js"></script>
+    
+        
+</body>
+</html>
